@@ -16,7 +16,7 @@ html {
 
 #header {
     min-height: 100vh;
-    background-image: url('/htmlfiles/img/wysiwyg-uploads_1580196666465-doctor.jpg');
+    background-image: url('wysiwyg-uploads_1580196666465-doctor.jpg');
     background-position: center;
     background-size: cover;
 
