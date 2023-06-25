@@ -138,7 +138,7 @@ nav ul li a:focus {
     }
 
     .myfirstcontainer {
-        background-image: url('img/evgeni-tcherkasski-Gyp9-tIZxiw-unsplash.jpg');
+        background-image: url('evgeni-tcherkasski-Gyp9-tIZxiw-unsplash.jpg');
     }
 
     ul {
@@ -176,7 +176,7 @@ nav ul li a:focus {
 
 }
 #Contact-us {
-     background-image: url('../img/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg');
+     background-image: url('nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg');
      background-position: center;
      background-size: cover;
      /* width: 100%; */
