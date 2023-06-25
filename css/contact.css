@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* css for navbar  */
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+#header {
+    min-height: 100vh;
+    background-image: url('/htmlfiles/img/wysiwyg-uploads_1580196666465-doctor.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.6)
+}
+
+body {
+    font-family: montserrat;
+    overflow-x: hidden;
+    /* height: 100rem; */
+}
+
+nav {
+    /* box-shadow: 5px 5px 5px black; */
+    background: #ffffff;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+    width: 100%;
+}
+
+label.logo {
+    color: rgb(8, 8, 8);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(12, 109, 255);
+    font-size: 18px;
+    padding: 7px 13px;
+    font-family: sans-serif;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li a:focus {
+    color: rgb(233, 64, 120);
+}
+
+#contact a {
+    background-color: rgb(0, 81, 255);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+#contact a:hover {
+    border: 2px solid rgb(0, 81, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 81, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.checkbtn {
+    color: black;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+    color: black;
+}
+
+
+.logo-icon {}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 2.5rem;
+        padding-left: 5rem;
+    }
+
+    nav ul li a {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 858px) {
+    #header {
+        width: 100%;
+    }
+
+    .checkbtn {
+        display: block;
+        color: #000000;
+    }
+
+    .myfirstcontainer {
+        background-image: url('img/evgeni-tcherkasski-Gyp9-tIZxiw-unsplash.jpg');
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        top: 80px;
+        left: -100%;
+        z-index: 100;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        color: black;
+    }
+
+}
+#Contact-us {
+     background-image: url('../img/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg');
+     background-position: center;
+     background-size: cover;
+     /* width: 100%; */
+     min-height: 70vh;
+
+     background-repeat: no-repeat;
+ }
+
+ h1 {
+     /* z-index: 10000000000; */
+     /* font-size: 10rem; */
+
+ }
+
+ #Contact-us::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 70%;
+     background-color: rgba(0, 158, 185, 0.6);
+ }
+
+ /* .contact-main-head {
+     position: absolute;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .contact-main-head h1 {
+     font-size: 6rem;
+     color: white;
+ }
+
+ /* css for form  */
+
+ .form-main-head {
+     padding-top: 33rem;
+ }
+
+ .container {
+     background-color: #ffffff;
+     width: 90%;
+
+     min-width: 420px;
+     padding: 35px 50px;
+     transform: translate(-50%, -50%);
+     position: relative;
+     left: 50%;
+     /* top: 80%; */
+     border-radius: 10px;
+     box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+     padding-top: 10rem;
+ }
+
+ h1 {
+     font-size: 30px;
+     text-align: center;
+     color: #1c093c;
+ }
+
+ p {
+     position: relative;
+     margin: auto;
+     width: 100%;
+     text-align: center;
+     color: #606060;
+     font-size: 14px;
+     font-weight: 400;
+ }
+
+ form {
+     width: 100%;
+     position: relative;
+     margin: 30px auto 0 auto;
+ }
+
+ .row {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     grid-gap: 20px 30px;
+     margin-bottom: 20px;
+ }
+
+ label {
+     color: #1c093c;
+     font-size: 20px;
+ }
+
+ textarea,
+ input {
+     width: 100%;
+     font-weight: 400;
+     padding: 15px 17px;
+     border-radius: 5px;
+     border: 1.2px solid #c4cae0;
+     margin-top: 5px;
+ }
+
+ textarea {
+     resize: none;
+ }
+
+ textarea:focus,
+ input:focus {
+     outline: none;
+     border: 2px solid #6f6df4;
+
+ }
+
+ button {
+     border: none;
+     padding: 10px 20px;
+     background: linear-gradient(130deg,
+             #6f6df4,
+             #4c46f5);
+     color: #ffffff;
+     border-radius: 3px;
+ }
+
+ @media(max-width:858px) {
+    #Contact-us::before{
+        height: 70vh;
+    }
+     .contact-main-head {
+         width: 100%;
+     }
+
+     .form-main-head {
+         padding-top: 40rem;
+     }
+
+     .contact-main-head h1 {
+         font-size: 5rem;
+     }
+ }
+
+ @media(max-width:400px) {
+     .contact-main-head h1 {
+         font-size: 4rem;
+     }
+ } */
+
+ /* css for our contact  */
+ #our-contact {
+     min-height: 70vh;
+     position: relative;
+     bottom: 22rem;
+ }
+
+ .our-address {
+     display: flex;
+     /* flex-direction: column; */
+     justify-content: space-around;
+     margin: auto;
+     padding: 10rem 4rem;
+     margin-top: 2rem;
+     box-shadow: 6px -8px 15px 10px rgba(0, 0, 0, 0.15);
+     width: 90%;
+     /* height: 40rem; */
+     /* align-items: center; */
+     border-radius: 10px;
+     min-width: 420px;
+ }
+
+ @media(max-width:858px) {
+     .our-address {
+
+         flex-direction: column;
+         /* justify-content: center; */
+         /* align-items: center; */
+     }
+
+     .details {
+         padding-top: .7rem;
+     }
+ }
+
+ .s2nd {
+     margin-top: 1.5rem;
+ }
+
+ .details p {
+     text-align: left;
+     font-size: 1.5rem;
+ }
+
+ .details p a {
+     color: black;
+     text-decoration: none;
+ }
+
+ h4 {
+     font-size: 2.2rem;
+ }
